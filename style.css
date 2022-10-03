@@ -80,12 +80,6 @@ body{
     justify-content: center;
     gap: 15px;
 }
-.hero-section__title{
-    color: var(--primary-color);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-}
 .hero-section__intro{
     font-size: 58px;
     font-weight: bold;
@@ -129,12 +123,12 @@ body{
     height: 7px;
     background-color: var(--chocolate);
 }
-.intro-layout__title{
+.layout__title{
     font-weight: 700;
     font-size: 40px;
     color: var(--dark);
 }
-.intro-layout__text{
+.layout__text{
     color: var(--light);
     font-size: 14px;
     font-weight: 500;
@@ -157,23 +151,8 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-.team-layout__title{
-    color: var(--primary-color);
-    font-size: 14px;
-    font-weight: bold;
-}
-.team-layout__big-title{
-    color: var(--dark);
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 0.2px;
-}
-.team-layout__text{
-    color: var(--light);
+.layout__text--md{
     max-width: 469px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
 }
 .team-layout__members{
     margin-top: 50px;
@@ -234,23 +213,8 @@ body{
     justify-content: center;
     gap: 10px;
 }
-.footer__title{
-    color: var(--primary-color);
-    font-size: 14px;
-    font-weight: bold;
-}
-.footer__big-title{
-    color: var(--dark);
-    font-weight: bold;
-    font-size: 40px;
-}
-.footer__text{
-    max-width: 469px;
+.layout__text--center{
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--light);
-    letter-spacing: 0.2px;
 }
 .footer__input-container{
     margin-top: 60px;
@@ -276,6 +240,11 @@ body{
 }
 .nav__menu-icon{
     display: none;
+}
+.layout__sub-title{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 @media (max-width: 400px) {
@@ -313,7 +282,7 @@ body{
     .team-layout__members{
         grid-template-columns: 1fr;
     }
-    .team-layout__big-title, .intro-layout__title, .footer__big-title{
+    .layout__title, .footer__big-title{
         font-size: 30px;
     }
     .nav__menu-icon{
