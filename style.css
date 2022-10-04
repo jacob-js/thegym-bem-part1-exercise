@@ -260,7 +260,8 @@ body{
         font-size: 40px;
         width: 100%;
     }
-    .intro-layout{
+    .layout--intro{
+        max-width: 100%;
         flex-direction: column;
     }
     .intro-layout__img-container{
@@ -270,28 +271,25 @@ body{
     .intro-layout__img{
         max-width: 100%;
     }
-    .intro-layout{
-        max-width: 100%;
-    }
     .main{
         padding-left: 30px;
         padding-right: 30px;
     }
-    .intro-layout__desc{
+    .layout__desc{
         width: 100%;
         margin-top: 20px;
     }
     .team-layout__members{
         grid-template-columns: 1fr;
     }
-    .layout__title, .footer__big-title{
+    .layout__title{
         font-size: 30px;
     }
     .nav__menu-icon{
         display: block;
         font-size: 18px;
     }
-    .footer{
+    .layout--footer{
         padding: 30px;
     }
     .footer__input-container{
@@ -309,7 +307,7 @@ body{
     .nav__items, .nav__right-side{
         display: none;
     }
-    .intro-layout{
+    .layout--intro{
         flex-direction: column;
         gap: 20px;
     }
