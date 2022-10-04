@@ -101,8 +101,11 @@ body{
     padding: 130px;
 }
 
-.intro-layout{
+.layout{
     display: flex;
+}
+
+.layout--intro{
     justify-content: space-between;
     align-items: center;
 }
@@ -112,13 +115,13 @@ body{
 .intro-layout__img{
     width: 100%;
 }
-.intro-layout__desc{
+.layout__desc{
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.intro-layout__border{
+.layout__border{
     width: 94px;
     height: 7px;
     background-color: var(--chocolate);
@@ -135,7 +138,7 @@ body{
     letter-spacing: 0.2px;
     line-height: 20px;
 }
-.intro-layout__link{
+.layout__link{
     color: var(--primary-color);
     cursor: pointer;
     display: flex;
@@ -145,7 +148,7 @@ body{
     font-size: 14px;
 }
 
-.team-layout{
+.layout--team{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -204,10 +207,9 @@ body{
     cursor: pointer;
 }
 
-.footer{
+.layout--footer{
     background-color: var(--kaki);
     height: 594px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
